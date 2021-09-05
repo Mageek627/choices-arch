@@ -1,3 +1,7 @@
+The edges of this graph represent "mutual dependency" in the choice to make.
+![Alt text](./diag.svg)
+<img src="./diag.svg">
+
 # Hardware
 Depends on:
 - your requirements
@@ -20,19 +24,16 @@ Tightly linked to the choice of motherboard and bootloader, see https://libreboo
 Most UEFI-based systems have a legacy BIOS functionality integrated in the UEFI system firmware, it provides a backward compatibility mode.
 
 # Payload (only for Libreboot/Coreboot)
-Tightly linked to the choice of bootloader.
 See https://libreboot.org/docs/install/#payload-names
 
 # Other firmwares
-
 Tightly linked to the choice of hardware. See https://libreboot.org/faq.html#what-other-firmware-exists-outside-of-libreboot
 
 # Drivers
 Tightly linked to the choice of hardware. Choose from https://h-node.org/hardware/catalogue/en and https://ryf.fsf.org/products if you want libre-only drivers.
 
 # Bootloader
-
-Tightly linked to the choice of motherboard, boot firmware, and partitioning scheme. You need to identify first if your boot firmware is compatible with the UEFI standard, see https://itsfoss.com/check-uefi-or-bios/
+Tightly linked to the choice of file system, boot firmware, and partitioning scheme. You need to identify first if your boot firmware is compatible with the UEFI standard, see https://itsfoss.com/check-uefi-or-bios/
 
 Then, use this to choose your bootloader: https://wiki.archlinux.org/title/Arch_boot_process#Feature_comparison
 
@@ -40,7 +41,7 @@ You can then choose your kernel parameters (for hibernation, compression...) her
 
 # Partitioning scheme
 
-Tightly linked to the choice of bootloader, according to link above. GPT is more recent than MBR. See https://wiki.archlinux.org/title/partitioning#Choosing_between_GPT_and_MBR
+Tightly linked to the choice of bootloader, according to the bootloader table above. GPT is more recent than MBR. See https://wiki.archlinux.org/title/partitioning#Choosing_between_GPT_and_MBR
 
 # File system
 
@@ -58,6 +59,7 @@ This is where you choose if you want to use SELinux, and where you choose the dr
 # Initramfs config
 
 See https://wiki.archlinux.org/title/mkinitcpio#Configuration
+
 Tightly linked to the init software, this is where you should choose the right hooks https://wiki.archlinux.org/title/mkinitcpio#Common_hooks
 
 # Init software

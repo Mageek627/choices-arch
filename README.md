@@ -1,5 +1,4 @@
 The edges of this graph represent "mutual dependency" in the choice to make.
-![Alt text](./diag.svg)
 <img src="./diag.svg">
 
 # Hardware

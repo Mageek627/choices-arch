@@ -11,6 +11,7 @@ Tightly linked to the 4 following sections.
 
 # Boot firmware
 Tightly linked to the choice of motherboard and bootloader, see https://libreboot.org/docs/hardware/
+
 3 methods:
 - keep the firmware that comes with your motherboard
 - get the motherboard flashed by someone else* (see https://libreboot.org/suppliers.html)
@@ -59,7 +60,7 @@ This is where you choose if you want to use SELinux, and where you choose the dr
 
 See https://wiki.archlinux.org/title/mkinitcpio#Configuration
 
-Tightly linked to the init software, this is where you should choose the right hooks https://wiki.archlinux.org/title/mkinitcpio#Common_hooks
+Tightly linked to the init software, this is where you should choose the right hooks https://wiki.archlinux.org/title/mkinitcpio#Common_hooks (also for hibernation).
 
 # Init software
 

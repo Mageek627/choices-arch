@@ -1,4 +1,4 @@
-The edges of this graph represent "mutual dependency" in the choice to make.
+The edges of this graph represent "mutual dependency" in the choices to make.
 <img src="./diag.svg">
 
 # Hardware
